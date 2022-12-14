@@ -3,10 +3,27 @@ const prismaClient = require('@prisma/client');
 const prisma = new prismaClient.PrismaClient()
 
 async function main() {
-  // ... you will write your Prisma Client queries here
-  const allUsers = await prisma.user.findMany()
-  console.log(allUsers)
-}
+    await prisma.user.create({
+      data: {
+        name: 'Axay',
+        email: 'axay@prisma.io',
+        posts: {
+          create: { title: 'Hello World' },
+        },
+        profile: {
+          create: { bio: 'Go Buckeyes' },
+        },
+      },
+    })
+  
+    const allUsers = await prisma.user.findMany({
+      include: {
+        posts: true,
+        profile: true,
+      },
+    })
+    console.dir(allUsers, { depth: null })
+  }
 
 main()
   .then(async () => {
