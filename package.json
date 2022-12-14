@@ -1,0 +1,19 @@
+{
+  "name": "node-orms",
+  "version": "1.0.0",
+  "description": "## Docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xypatel/Node-ORMs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xypatel/Node-ORMs/issues"
+  },
+  "homepage": "https://github.com/xypatel/Node-ORMs#readme"
+}
