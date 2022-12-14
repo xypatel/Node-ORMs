@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/xypatel/Node-ORMs/issues"
   },
-  "homepage": "https://github.com/xypatel/Node-ORMs#readme"
+  "homepage": "https://github.com/xypatel/Node-ORMs#readme",
+  "devDependencies": {
+    "prisma": "^4.7.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.7.1"
+  }
 }
